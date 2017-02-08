@@ -1,0 +1,222 @@
+body, html {
+  font-family: 'Shadows Into Light', arial;
+  font-size: 1em;
+	overflow-x: hidden;
+  height: 100%;
+}
+
+h1, h4, .gallery-item a, #resume, #contact, .cr {
+  font-family: 'Poiret One', arial;
+}
+
+.row {
+  height: 100%;
+  position: relative;
+}
+
+.navbar-toggle {
+	background-color: white;
+	top: 25px;
+}
+
+.navbar-nav {
+  padding: 0 0 0 40px;
+}
+
+@media (min-width: 768px) {
+  .sidebar-nav .navbar .navbar-collapse {
+    padding: 36px;
+    max-height: none;
+  }
+  .sidebar-nav .navbar ul {
+    float: none;
+		padding: 36px 12px 12px 12px;
+  }
+  .sidebar-nav .navbar ul:not {
+    display: block;
+  }
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+		font-weight: 200;
+	  font-size: 22px;
+  }
+  .sidebar-nav .navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .navbar {
+    padding: 0;
+    background: transparent;
+    border: white;
+  }
+
+  .row {
+    background: white url("") no-repeat bottom left;
+  }
+}
+
+#name {
+	padding: 32px;
+	text-align: left;
+	font-size: 35px;
+  color: #f89614;
+  line-height: 38px;
+  font-family: 'Shadows Into Light', arial;
+}
+
+a:hover  {
+	font-weight: 500 !important;
+}
+
+li.selected a  {
+  color: #f89614 !important;
+}
+
+#main {
+  margin: 0;
+  height: 100%;
+  background: url("IMG_0031.jpg") no-repeat;
+  background-position: 80% 75%;
+  color: white;
+  text-align: center;
+  font-weight: 100;
+  overflow: scroll;
+}
+
+#main-gallery {
+  margin: 0;
+  height: 100%;
+  background: url("IMG_0031.jpg") no-repeat 80% 75%;
+  background-blend-mode: lighten;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: white;
+  text-align: center;
+  font-weight: 100;
+  overflow: scroll;
+}
+
+
+
+
+#statement, #about, #contact {
+  padding: 15% 15px 0 15px;
+}
+
+#statement p, #contact .info {
+  margin: 15px 50px 15px 50px;
+  border: 2px solid white;
+  background-color: rgba(255,255,255,0.2);
+}
+
+#about img {
+  border: 10px solid white;
+  padding: 5px;
+  margin: 10px;
+}
+
+/* gallery.html */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.gallery-item {
+  margin: 20px;
+}
+
+.gallery-item .thumbnail, #tall {
+  width: 240px;
+  height: 320px;
+}
+
+.gallery-item .thumbnail, #wide {
+  width: 320px;
+  height: 240px;
+}
+
+.gallery-item .thumbnail, #square {
+  width: 300px;
+  height: 300px;
+}
+
+.gallery-item a {
+  float: left;
+  position: relative;
+}
+
+.gallery-item a:hover span {
+  display: block;
+}
+
+.gallery-item a span {
+  display: none;
+  position: absolute;
+  padding: 50% 0 0 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+	color: black;
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+  background: rgba(255,255,255,0.5);
+}
+
+/* resume.html */
+#resume tr td {
+  text-align: left;
+  padding-bottom: 0.2em;
+  font-weight: 400;
+}
+
+#resume td {
+  padding: 0 10px 0 10px;
+}
+
+#resume th {
+  border-bottom: 1px solid white;
+  font-size: 15px;
+}
+
+#resume {
+  font-weight: 500;
+  font-size: 13px;
+  padding: 20px;
+  bottom: 2px solid white;
+}
+
+/* contact.html */
+#contact .info {
+  padding: 30px 0 30px 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#contact a {
+  word-spacing: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+#gallery-link {
+  color: white;
+}
+
+.blank_row {
+  height: 15px;
+}
+
+/* CR trademark */
+.cr {
+  font-size: 10px;
+	color: black;
+	float: right;
+	left: 0;
+	right: 0;
+	bottom: 0;
+  padding: 0 14px 0 0;
+}
